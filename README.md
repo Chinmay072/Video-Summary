@@ -12,6 +12,12 @@ An AI-powered tool that automatically converts research papers (PDF) into engagi
 - 🖼️ Integrates thematically relevant background images
 - 📝 Generates paper summaries and key insights
 
+![image](https://github.com/user-attachments/assets/727eeecd-6be8-458a-bef4-3665797b8771)
+![image](https://github.com/user-attachments/assets/f14c3fa9-0377-467a-ad34-c3cc67d7cba7)
+![image](https://github.com/user-attachments/assets/e02d95c0-0dd4-467f-a420-430dfa452e49)
+![image](https://github.com/user-attachments/assets/76ff1b56-ad3d-4b49-8035-8910191fbf37)
+
+
 ## Prerequisites
 
 - Python 3.8+
