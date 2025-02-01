@@ -38,35 +38,17 @@ python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
-3. Install Python dependencies:
-```bash
-pip install -r requirements.txt
-```
-
-4. Install Mermaid CLI (for workflow diagrams):
+3. Install Mermaid CLI (for workflow diagrams):
 ```bash
 npm install -g @mermaid-js/mermaid-cli
 ```
-
-5. Create a `.env` file in the project root and add your API keys:
-```
-GROQ_API_KEY=your_groq_api_key
-GEMINI_API_KEY=your_gemini_api_key
-UNSPLASH_ACCESS_KEY=your_unsplash_access_key
 ```
 
 ## Usage
 
-1. Basic usage:
-```python
-from paper_processor import process_paper
-
-process_paper("path/to/your/paper.pdf", "output_video.mp4")
-```
-
-2. Running from command line:
+1. Running from command line (mention the path of research paper and where you want to store the video in python code):
 ```bash
-python main.py --pdf_path "path/to/your/paper.pdf" --output "output_video.mp4"
+python simplegen.py
 ```
 
 ## How It Works
@@ -110,14 +92,6 @@ You can customize various aspects of the video generation by modifying the follo
 - Audio speed and language
 - Video quality settings
 
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
 ## Acknowledgments
 
 - FFmpeg for video processing
@@ -128,15 +102,10 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 Common issues and solutions:
 
-1. **FFmpeg not found**
-   - Ensure FFmpeg is installed and added to system PATH
-   - On Windows: Download from ffmpeg.org and add to PATH
-   - On Linux: `sudo apt-get install ffmpeg`
-
-2. **Mermaid CLI errors**
+1. **Mermaid CLI errors**
    - Ensure Node.js is installed
    - Try reinstalling Mermaid CLI: `npm install -g @mermaid-js/mermaid-cli`
 
-3. **API Rate Limits**
+2. **API Rate Limits**
    - Consider implementing retry logic
    - Check API quotas and limits
