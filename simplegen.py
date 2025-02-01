@@ -24,13 +24,12 @@ import subprocess
 import json
 
 # Initialize API clients
-# UNSPLASH_ACCESS_KEY = "azx7qFQmoXks1ZsR7iqkFb_6RTVmJ0x38ZjwHt1lY14"  # Replace with your Unsplash Access Key
-GEMINI_API_KEY = "AIzaSyCYS1M4u1YjlSPmRcook-eO-B2UV2OtyNc"
+GEMINI_API_KEY = ""  # Replace with your Gemini API key
 genai.configure(api_key=GEMINI_API_KEY)
 gemini_model = genai.GenerativeModel('gemini-pro')
 
 client = Groq(
-    api_key="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"  # Replace with your Groq API key
+    api_key=""  # Replace with your Groq API key
 )
 
 def get_search_terms(text):
